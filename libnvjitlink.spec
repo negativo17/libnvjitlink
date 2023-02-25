@@ -6,7 +6,7 @@
 
 Name:           libnvjitlink
 Epoch:          1
-Version:        12.0.76
+Version:        12.0.140
 Release:        1%{?dist}
 Summary:        NVIDIA compiler library for JIT LTO functionality
 License:        CUDA Toolkit
@@ -27,7 +27,7 @@ Just-in-time link-time-optimization (JIT LTO) allows developers to proved
 runtime linking of specialized kernel functions with no-call overhead.
 
 %package devel
-Summary:        Development files for CUDA NVIDIA JPEG decoder (nvJPEG)
+Summary:        Development files for NVIDIA compiler library for JIT LTO functionality
 Requires:       %{name}%{_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 Conflicts:      %{name}-devel-%{major_package_version} < %{?epoch:%{epoch}:}%{version}
 
@@ -88,5 +88,8 @@ sed -i \
 %{_libdir}/libnvJitLink_static.a
 
 %changelog
+* Sat Feb 25 2023 Simone Caronni <negativo17@gmail.com> - 1:12.0.140-1
+- Update to 12.0.140.
+
 * Fri Dec 16 2022 Simone Caronni <negativo17@gmail.com> - 1:12.0.76-1
 - First build.
