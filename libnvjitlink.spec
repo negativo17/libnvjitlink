@@ -6,7 +6,7 @@
 
 Name:           libnvjitlink
 Epoch:          1
-Version:        12.2.91
+Version:        12.2.140
 Release:        1%{?dist}
 Summary:        NVIDIA compiler library for JIT LTO functionality
 License:        CUDA Toolkit
@@ -88,6 +88,9 @@ sed -i \
 %{_libdir}/libnvJitLink_static.a
 
 %changelog
+* Thu Sep 28 2023 Simone Caronni <negativo17@gmail.com> - 1:12.2.140-1
+- Update to 12.2.140.
+
 * Tue Jul 11 2023 Simone Caronni <negativo17@gmail.com> - 1:12.2.91-1
 - Update to 12.2.91.
 
