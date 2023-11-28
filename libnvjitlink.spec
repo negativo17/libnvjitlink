@@ -79,7 +79,6 @@ sed -i \
 %{_libdir}/libnvJitLink.so.*
 
 %files devel
-%doc res/*.def
 %{_includedir}/nvJitLink.h
 %{_libdir}/libnvJitLink.so
 %{_libdir}/pkgconfig/nvjitlink.pc
